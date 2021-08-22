@@ -11,9 +11,9 @@ import org.junit.runner.RunWith;
         plugin = {"json:target/cucumber.json"},
         features = "src/test/resources/features",
         glue = "hectorware/stepsdefinitions",
-        dryRun = false,
-        tags = "@wip"
+        dryRun = true,
+        tags = ""
 )
 
-public class goRunner {
+public class RunnerTest {
 }

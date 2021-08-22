@@ -3,7 +3,7 @@ package hectorware.utilities;
 import java.io.FileInputStream;
 import java.util.Properties;
 
-public class ConfigurationReader {
+public class ReadConfigurations {
 
     private static Properties properties;
 

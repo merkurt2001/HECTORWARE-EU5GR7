@@ -18,7 +18,7 @@ public class Driver {
     public static WebDriver get(){
 
         if (driver == null){
-            String browser = ConfigurationReader.get("browser");
+            String browser = ReadConfigurations.get("browser");
 
             DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
             desiredCapabilities.setAcceptInsecureCerts(true);
