@@ -1,4 +1,4 @@
-package hectorware.stepsDefenitions;
+package hectorware.stepsdefenitions;
 
 import hectorware.utilities.Driver;
 import hectorware.utilities.WebTools;
