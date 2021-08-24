@@ -14,7 +14,7 @@ public class FilesPage extends BasePage{
     @FindBy(xpath = "//input[@id='file_upload_start']")
     public  WebElement uploadFileDropDown;
 
-    @FindBy(xpath = "(//span[contains(text(),'TextFile')]")
+    @FindBy(xpath = "//span[contains(text(),'TextFile')]")
     public  WebElement checkFile;
 
     @FindBy(xpath = "(//tr[@data-file='TextFile.txt']//td//a//a//span)[3]")
@@ -39,7 +39,7 @@ public class FilesPage extends BasePage{
     @FindBy(xpath = "//button[@class='primary']")
     public WebElement moveButton;
 
-    @FindBy(xpath = "//a[@class='icon-home']")
+    @FindBy(xpath = "//div[@class='crumb']")
     public WebElement homeIcon;
 
     @FindBy(xpath = "//span[contains(text(),'New folder')]")
@@ -53,6 +53,24 @@ public class FilesPage extends BasePage{
 
     @FindBy(xpath = "//span[contains(text(),'TextFile (copy)')]")
     public WebElement copiedFile;
+
+    @FindBy(xpath = "//a[@class='icon-home']")
+    public WebElement homeButton;
+
+    @FindBy(xpath = "//a[@data-action=\"Delete\"]")
+    public WebElement deleteOption;
+
+    @FindBy(xpath = "//a[@class=\"nav-icon-trashbin svg\"]")
+    public WebElement deletedFiles;
+
+    @FindBy(xpath = "//span[contains(text(),'TextFile')]")
+    public WebElement deletedFile;
+
+    @FindBy(xpath = "//span[@data-original-title='New folder']")
+    public WebElement deletedFolder;
+
+    @FindBy(xpath = "//input[@value='New folder']")
+    public WebElement textInput;
 
 
 }

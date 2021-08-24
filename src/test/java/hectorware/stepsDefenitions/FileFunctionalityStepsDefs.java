@@ -123,11 +123,7 @@ public class FileFunctionalityStepsDefs {
         WebTools.waitFor(2);
     }
 
-    @And("the user clicks home icon")
-    public void theUserClicksHomeIcon() {
-        new FilesPage().homeIcon.click();
-        WebTools.waitFor(2);
-    }
+
 
     @And("the user clicks on newly created folder")
     public void theUserClicksOnNewlyCreatedFolder() {
@@ -152,6 +148,50 @@ public class FileFunctionalityStepsDefs {
     @Then("the copied file should be on the files page")
     public void theCopiedFileShouldBeOnTheFilesPage() {
         new FilesPage().copiedFile.isDisplayed();
+        WebTools.waitFor(2);
+
+    }
+
+
+    @And("the user clicks home icon")
+    public void theUserClicksHomeIcon() {
+        new FilesPage().homeButton.click();
+        WebTools.waitFor(2);
+    }
+
+    @And("clicks on Delete option")
+    public void clicksOnDeleteOption() {
+        new FilesPage().deleteOption.click();
+        WebTools.waitFor(2);
+    }
+
+
+    @When("the user clicks on Deleted files")
+    public void theUserClicksOnDeletedFiles() {
+        new FilesPage().deletedFiles.click();
+        WebTools.waitFor(2);
+    }
+
+
+    @Then("the deleted file should be found under deleted files")
+    public void theDeletedFileShouldBeFoundUnderDeletedFiles() {
+        String text = new FilesPage().deletedFile.getAttribute("value");
+        System.out.println("text = " + text);
+        Assert.assertEquals("TextFile",text);
+        WebTools.waitFor(2);
+    }
+
+    @Then("the deleted folder should be found under deleted files")
+    public void theDeletedFolderShouldBeFoundUnderDeletedFiles() {
+        String text = new FilesPage().deletedFolder.getText();
+        System.out.println("text = " + text);
+        Assert.assertEquals("New folder",text);
+        WebTools.waitFor(2);
+    }
+
+    @And("the user names the the folder")
+    public void theUserNamesTheTheFolder() {
+        new FilesPage().textInput.sendKeys("File functionality");
         WebTools.waitFor(2);
     }
 }

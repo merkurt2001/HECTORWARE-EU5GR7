@@ -20,7 +20,7 @@ Feature:
 		And the uploaded file should be displayed in files page
 
 
-			
+
 
 	#*As a user, I should be able to upload a file, move or delete any selected file under the Files module*
 	#
@@ -39,6 +39,7 @@ Feature:
 		Then the Choose target folder should be displayed
 
 		When the user clicks on plus icon
+		And the user names the the folder
 		And the user clicks on submit arrow to create a new folder
 		And the user clicks move button
 		And the user clicks home icon
@@ -73,8 +74,11 @@ Feature:
 
 
 		And clicks on Delete option
-		Then the selected file should not be displayed on Files page
 		When the user clicks on Deleted files
-		Then the deleted file should be found
-		
-		
+		Then the deleted file should be found under deleted files
+
+		When the user clicks on newly created folder
+		And clicks on Delete option
+		Then the deleted folder should be found under deleted files
+
+
