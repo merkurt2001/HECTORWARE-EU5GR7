@@ -9,7 +9,7 @@ public class SaitLoginPage {
 
     //LoginPage Constructor
     public SaitLoginPage(){
-        PageFactory.initElements(Driver.get(), this);
+        PageFacry.initElements(Driver.get(), this);
     }
 
     //Locators
