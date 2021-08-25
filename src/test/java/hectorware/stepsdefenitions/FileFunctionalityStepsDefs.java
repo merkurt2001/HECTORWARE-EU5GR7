@@ -1,4 +1,4 @@
-package hectorware.stepsDefenitions;
+package hectorware.stepsdefenitions;
 
 import hectorware.pages.FilesPage;
 import hectorware.pages.LoginPage;
@@ -9,15 +9,8 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
-
-import java.io.File;
-import java.io.IOException;
-import java.util.prefs.PreferencesFactory;
 
 public class FileFunctionalityStepsDefs {
 

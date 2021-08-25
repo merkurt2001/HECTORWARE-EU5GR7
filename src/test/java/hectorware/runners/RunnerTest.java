@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         plugin = {"json:target/cucumber.json"},
         features = "src/test/resources/features",
         glue = "hectorware/stepsdefinitions",
-        dryRun = true,
+        dryRun = false,
         tags = "@HECW-76"
 )
 
