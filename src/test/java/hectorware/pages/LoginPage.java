@@ -23,10 +23,6 @@ public class LoginPage {
     public WebElement loginButton;
 
 
-
-
-
-
     public void login(String username, String password){
 
         userBox.sendKeys(username);
