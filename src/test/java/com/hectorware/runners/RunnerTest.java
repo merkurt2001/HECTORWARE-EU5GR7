@@ -1,4 +1,4 @@
-package hectorware.runners;
+package com.hectorware.runners;
 
 
 import io.cucumber.junit.Cucumber;
@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         plugin = {"json:target/cucumber.json"},
         features = "src/test/resources/features",
-        glue = "hectorware/stepsdefinitions",
+        glue = "com/hectorware/stepsdefinitions",
         dryRun = false,
         tags = "@HECW-76"
 )
