@@ -1,4 +1,4 @@
-package hectorware.pages;
+package com.hectorware.pages;
 
 import com.hectorware.utilities.Driver;
 import org.openqa.selenium.WebElement;

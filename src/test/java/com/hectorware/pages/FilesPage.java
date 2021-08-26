@@ -1,6 +1,5 @@
-package hectorware.pages;
+package com.hectorware.pages;
 
-import hectorware.utilities.WebTools;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 

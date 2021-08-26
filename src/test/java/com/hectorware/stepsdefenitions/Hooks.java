@@ -1,7 +1,7 @@
-package hectorware.stepsdefenitions;
+package com.hectorware.stepsdefenitions;
 
-import hectorware.utilities.Driver;
-import hectorware.utilities.WebTools;
+import com.hectorware.utilities.Driver;
+import com.hectorware.utilities.WebTools;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;

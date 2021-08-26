@@ -1,4 +1,4 @@
-package hectorware.runners;
+package com.hectorware.runners;
 
 
 import io.cucumber.junit.Cucumber;
@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         plugin = {"html:target/failed-html-report"},
         features = "@target/rerun.txt",
-        glue = "com/hectorware/stepdefinitions"
+        glue = "com/com.hectorware/stepdefinitions"
 )
 public class FailedTestRunner {
 }

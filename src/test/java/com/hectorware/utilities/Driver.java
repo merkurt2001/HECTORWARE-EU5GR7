@@ -1,4 +1,4 @@
-package hectorware.utilities;
+package com.hectorware.utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
