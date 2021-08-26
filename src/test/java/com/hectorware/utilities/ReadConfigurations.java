@@ -1,4 +1,4 @@
-package hectorware.utilities;
+package com.hectorware.utilities;
 
 import java.io.FileInputStream;
 import java.util.Properties;

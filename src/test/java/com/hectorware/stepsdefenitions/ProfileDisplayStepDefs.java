@@ -1,8 +1,7 @@
-package hectorware.stepsdefenitions;
+package com.hectorware.stepsdefenitions;
 
 import com.hectorware.pages.ProfileDisplayPage;
 import com.hectorware.utilities.BrowserUtils;
-import hectorware.pages.ProfileDisplayPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;

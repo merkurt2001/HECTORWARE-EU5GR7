@@ -1,4 +1,4 @@
-package hectorware.utilities;
+package com.hectorware.utilities;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
