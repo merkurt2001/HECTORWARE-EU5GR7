@@ -1,8 +1,8 @@
 package hectorware.stepsdefenitions;
 
-import com.hectorware.pages.LoginPage;
-import com.hectorware.utilities.ConfigurationReader;
-import com.hectorware.utilities.Driver;
+import hectorware.pages.LoginPage;
+import hectorware.utilities.Driver;
+import hectorware.utilities.ReadConfigurations;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -12,14 +12,14 @@ public class LoginStepDefs {
 
     @Given("the user navigate to login page")
     public void the_user_navigate_to_login_page() {
-        String url= ConfigurationReader.get("url");
+        String url= ReadConfigurations.get("url");
         Driver.get().get(url);
     }
 
     @When("the user enters username and password")
     public void the_user_enters_username_and_password() {
-        String username=ConfigurationReader.get("username");
-        String password=ConfigurationReader.get("password");
+        String username= ReadConfigurations.get("username");
+        String password=ReadConfigurations.get("password");
 
         LoginPage loginPage = new LoginPage();
         loginPage.login(username,password);
