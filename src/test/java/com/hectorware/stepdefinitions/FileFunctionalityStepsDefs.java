@@ -1,12 +1,8 @@
 package com.hectorware.stepdefinitions;
 
 import com.hectorware.pages.FilesPage;
-import com.hectorware.pages.LoginPage;
-import com.hectorware.utilities.Driver;
-import com.hectorware.utilities.ReadConfigurations;
 import com.hectorware.utilities.WebTools;
 import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
@@ -14,35 +10,7 @@ import org.openqa.selenium.WebElement;
 
 public class FileFunctionalityStepsDefs {
 
-    @Given("the user in the login page")
-    public void the_user_in_the_login_page() {
 
-        Driver.get().get(ReadConfigurations.get("url"));
-        WebTools.waitFor(2);
-
-    }
-
-    @When("the user enters valid credentials")
-    public void the_user_enters_valid_credentials() {
-
-        String usernameInput = ReadConfigurations.get("username");
-        String passwordInput = ReadConfigurations.get("password");
-
-        new LoginPage().login(usernameInput,passwordInput);
-        WebTools.waitFor(2);
-
-    }
-    @Then("the files Files page should be displayed")
-    public void the_files_Files_page_should_be_displayed() {
-
-        String actualTitle = Driver.get().getTitle().substring(0,4);
-        System.out.println("actualTitle = " + actualTitle);
-        String expectedTitle = "File";
-        Assert.assertEquals(expectedTitle,actualTitle);
-        WebTools.waitFor(2);
-
-
-    }
     @When("the user clicks the plus sign button")
     public void the_user_clicks_the_plus_sign_button() {
 
