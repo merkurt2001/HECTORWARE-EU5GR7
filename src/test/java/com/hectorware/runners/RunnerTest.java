@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/hectorware/stepdefinitions",
         dryRun = false,
-        tags = "@HECW-76"
+        tags = "@HECW-78"
 )
 
 public class RunnerTest {

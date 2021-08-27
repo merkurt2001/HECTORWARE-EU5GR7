@@ -8,13 +8,14 @@ Feature:
 	#*User can upload a file*
 	#
 	# 
+	Background:
+		Given the user navigate to login page
+		When the user enters username and password
+		Then the user should login successfully to the main page
+
 	@HECW-75
 	Scenario: Upload a file functionality
 
-		Given the user in the login page
-		When the user enters valid credentials
-		Then the files Files page should be displayed
-		
 		When the user clicks the plus sign button
 		Then the user uploads wanted file with upload button option
 		And the uploaded file should be displayed in files page
@@ -30,10 +31,6 @@ Feature:
 	@HECW-76
 	Scenario: Move or copy any selected item
 
-		Given the user in the login page
-		When the user enters valid credentials
-		Then the files Files page should be displayed
-		
 		When the user clicks on the icon more in front of wanted file
 		And clicks on Move or Copy option from drop down
 		Then the Choose target folder should be displayed
@@ -66,10 +63,6 @@ Feature:
 	@HECW-77
 	Scenario: Delete any selected item
 
-		Given the user in the login page
-		When the user enters valid credentials
-		Then the files Files page should be displayed
-		
 		When the user clicks on the icon more in front of wanted file
 
 
