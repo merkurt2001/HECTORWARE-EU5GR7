@@ -68,6 +68,9 @@ public class FilesPage extends BasePage{
     @FindBy(xpath = "//input[@value='New folder']")
     public WebElement textInput;
 
+    @FindBy(xpath = "//div[@class='crumb'][1]")
+    public WebElement homeIcon;
+
 
 }
 
