@@ -24,11 +24,8 @@ public class LoginPage {
 
 
     public void login(String username, String password){
-
-        userBox.sendKeys(username);
-        passwordBox.sendKeys(password);
+      userBox.sendKeys(username);
+       passwordBox.sendKeys(password);
         loginButton.click();
-
-
     }
 }

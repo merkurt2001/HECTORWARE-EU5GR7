@@ -7,7 +7,6 @@ Feature:
 	@HECW-98
 	Scenario: The user should be able to Change any info under Profile Settings page
 		Given the user navigate to login page
-		And the user enters username and password
 		When the user navigate to profile - settings module
 		And the user changes the full name as "John Smith"
 		Then the full-name info changed under Profile-Settings

@@ -1,4 +1,4 @@
-package com.hectorware.stepsdefenitions;
+package com.hectorware.stepdefinitions;
 
 import com.hectorware.utilities.Driver;
 import com.hectorware.utilities.WebTools;
@@ -14,15 +14,13 @@ public class Hooks {
 
     @Before
     public void setUp(){
-        Driver.get().manage().window().maximize();
         Driver.get().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        //WebTools.waitFor(2);
-
+        WebTools.waitFor(2);
     }
 
     @After
     public void tearDown(Scenario scenario){
-        WebTools.waitFor(2);
+       //WebTools.waitFor(2);
         if(scenario.isFailed()){
             final byte[] screenshot = ((TakesScreenshot) Driver.get()).getScreenshotAs(OutputType.BYTES);
             scenario.attach(screenshot,"image/png","screenshot");

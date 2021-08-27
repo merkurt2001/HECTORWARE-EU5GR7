@@ -1,4 +1,4 @@
-package com.hectorware.stepsdefenitions;
+package com.hectorware.stepdefinitions;
 
 import com.hectorware.pages.ProfileDisplayPage;
 import com.hectorware.utilities.BrowserUtils;

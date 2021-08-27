@@ -1,9 +1,9 @@
-package com.hectorware.stepsdefenitions;
+package com.hectorware.stepdefinitions;
 
 import com.hectorware.pages.FilesPage;
 import com.hectorware.pages.LoginPage;
-import com.hectorware.utilities.ReadConfigurations;
 import com.hectorware.utilities.Driver;
+import com.hectorware.utilities.ReadConfigurations;
 import com.hectorware.utilities.WebTools;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
