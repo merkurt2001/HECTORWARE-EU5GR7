@@ -1,4 +1,4 @@
-package com.hectorware.stepsdefenitions;
+package com.hectorware.stepdefinitions;
 
 import com.hectorware.pages.LoginPage;
 import com.hectorware.utilities.Driver;
@@ -18,7 +18,7 @@ public class LoginStepDefs {
 
     @When("the user enters username and password")
     public void the_user_enters_username_and_password() {
-        String username= ReadConfigurations.get("username");
+        String username=ReadConfigurations.get("username");
         String password=ReadConfigurations.get("password");
 
         LoginPage loginPage = new LoginPage();
@@ -27,6 +27,7 @@ public class LoginStepDefs {
 
     @Then("the user should login successfully to the main page")
     public void the_user_should_login_successfully_to_the_main_page() {
-        Assert.assertEquals("Verify user successfuly logged in", "Files - Hectorware - QA",Driver.get().getTitle());
+        Assert.assertEquals("Verify user successfully logged in", "Files - Hectorware - QA",Driver.get().getTitle());
     }
+    
 }
