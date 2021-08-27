@@ -40,7 +40,7 @@ public class FileFunctionalityStepsDefs {
     }
     @When("the user clicks on the icon more in front of wanted file")
     public void theUserClicksOnTheIconMoreInFrontOfWantedFile() {
-        WebTools.waitFor(2);
+
         new FilesPage().iconMore.click();
         WebTools.waitFor(2);
     }
