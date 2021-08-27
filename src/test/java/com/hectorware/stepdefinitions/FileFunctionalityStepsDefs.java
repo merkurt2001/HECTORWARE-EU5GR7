@@ -155,4 +155,9 @@ public class FileFunctionalityStepsDefs {
         new FilesPage().textInput.sendKeys("File functionality");
         WebTools.waitFor(2);
     }
+
+    @And("the user cliks on home icon button")
+    public void theUserCliksOnHomeIconButton() {
+        new FilesPage().homeIcon.click();
+    }
 }
