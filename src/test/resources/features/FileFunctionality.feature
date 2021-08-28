@@ -31,7 +31,7 @@ Feature:
 	@HECW-76
 	Scenario: Move or copy any selected item
 
-		When the user clicks on the icon more in front of wanted file
+		When the user right click on the wanted file
 		And clicks on Move or Copy option from drop down
 		Then the Choose target folder should be displayed
 
@@ -39,16 +39,17 @@ Feature:
 		And the user names the the folder
 		And the user clicks on submit arrow to create a new folder
 		And the user clicks move button
-		And the user clicks home icon
+		And the user clicks home button
 		And the user clicks on newly created folder
 		Then the moved file should be displayed
 
-		When the user clicks on the icon more in front of wanted file
-		And the user cliks on home icon button
+		When the user right clicks the moved file
 		And clicks on Move or Copy option from drop down
-		Then the Choose target folder should be displayed
+		And the Choose target folder should be displayed
+		And the user cliks on home icon button
+		And the user clicks on the copy button
+		And the user clicks home button
 
-		When the user clicks on the copy button
 		Then the copied file should be on the files page
 
 
@@ -64,15 +65,17 @@ Feature:
 	@HECW-77
 	Scenario: Delete any selected item
 
-		When the user clicks on the icon more in front of wanted file
-
-
+		When the user right click on the wanted file
 		And clicks on Delete option
 		When the user clicks on Deleted files
 		Then the deleted file should be found under deleted files
 
-		When the user clicks on newly created folder
+
+		When the user navigates back to files page
+		And the user right cliks on the wanted folder
 		And clicks on Delete option
+		And the user clicks on Deleted files
 		Then the deleted folder should be found under deleted files
+
 
 
