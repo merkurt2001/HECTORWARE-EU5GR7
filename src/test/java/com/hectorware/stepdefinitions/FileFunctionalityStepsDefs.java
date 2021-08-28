@@ -40,7 +40,7 @@ public class FileFunctionalityStepsDefs {
     }
     @When("the user clicks on the icon more in front of wanted file")
     public void theUserClicksOnTheIconMoreInFrontOfWantedFile() {
-        WebTools.waitFor(2);
+
         new FilesPage().iconMore.click();
         WebTools.waitFor(2);
     }
@@ -154,5 +154,10 @@ public class FileFunctionalityStepsDefs {
     public void theUserNamesTheTheFolder() {
         new FilesPage().textInput.sendKeys("File functionality");
         WebTools.waitFor(2);
+    }
+
+    @And("the user cliks on home icon button")
+    public void theUserCliksOnHomeIconButton() {
+        new FilesPage().homeIcon.click();
     }
 }

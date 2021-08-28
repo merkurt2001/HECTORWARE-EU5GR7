@@ -44,6 +44,7 @@ Feature:
 		Then the moved file should be displayed
 
 		When the user clicks on the icon more in front of wanted file
+		And the user cliks on home icon button
 		And clicks on Move or Copy option from drop down
 		Then the Choose target folder should be displayed
 
